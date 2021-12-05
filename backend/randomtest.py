@@ -5,7 +5,7 @@ client = MongoClient("mongodb+srv://javier2234:7jzUUZXvFpon0q7Y@cluster0.bpm8m.m
 db=client.pokedata
 
 
-trainer = db.trainers.find({'pokemons': "raticate"})
+trainer = db.trainers.find_one({'trainer': "Zacherl"})
 
 
 

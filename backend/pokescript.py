@@ -24,16 +24,15 @@ user = input('ingresa tu nombre de entrenador pokemon: ')
 
 
 player = db.trainers.find_one({'trainer': user})
-print (player)
-
 
 if player is None:
 
-    db.trainers.insert_one(player)
+    db.trainers.insert_one({'trainer': user})
 
     print(" bienvenido, veo que eres nuevo por aqui {}".format(user))
-elif :
-    print('bienvenido entrenador {} tus pokemon capturados son :'.format(user))
+else :
+
+    print('bienvenido entrenador {} tus pokemon capturados son :'.format(user,player.values()))
   
 comenzar = input('quieres buscar pokemons?(Y/N): ')
 
