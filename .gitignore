@@ -131,3 +131,5 @@ dmypy.json
 .pyre/
 mongodbtest.py
 backend/.env.example
+backend/bin/pokescript.py
+backend/bin/randontest.py
